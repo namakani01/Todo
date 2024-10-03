@@ -9,13 +9,11 @@ const Header = props => {
   // console.log(props)
 
   return (
-    <SafeAreaView style={{flex:1}}>
-    <View style={styles.header}>
-      
+    <SafeAreaView style={{flex: 1}}>
+      <View style={styles.header}>
         <Content></Content>
         <Inputbox data={props}></Inputbox>
-      
-    </View>
+      </View>
     </SafeAreaView>
   );
 };

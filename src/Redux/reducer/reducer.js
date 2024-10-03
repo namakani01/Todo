@@ -31,6 +31,6 @@ const operationReducer = (state = initialState , action)=>
      default : return state;
    }
 }
-export default operationReducer;  //export the reducer so it can be used in the store
+export default operationReducer;  
 
 

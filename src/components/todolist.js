@@ -1,7 +1,7 @@
 import {View, Text, FlatList, StyleSheet, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {deleteTodo, UPDATE_CHECKBOX} from '../Redux/actions/action';
+import {deleteTodo} from '../Redux/actions/action';
 import {deleteAllTodos} from '../Redux/actions/action';
 import Icon from 'react-native-vector-icons/AntDesign';
 import Icon1 from 'react-native-vector-icons/MaterialIcons';
@@ -16,12 +16,12 @@ const Todolist = props => {
 
   const dispatch = useDispatch();
 
-  // Handler to delete a specific todo
+  
   const handleDeleteTodo = id => {
     dispatch(deleteTodo(id));
   };
 
-  // Handler to delete all todos
+  
   const handleDeleteAll = () => {
     dispatch(deleteAllTodos());
   };
